@@ -1,0 +1,77 @@
+:root {
+  /* Default (Dark Mode) - Obsidian Aesthetic */
+  --color-primary: #9B5CFF;
+  --color-accent: #FF4ECD;
+  --color-bg-dark: #0B0F1A;
+  --color-bg-secondary: #111827;
+
+  --glass-overlay: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 12px;
+
+  --text-primary: #F9FAFB;
+  --text-muted: #9CA3AF;
+
+  --color-success: #22C55E;
+  --color-error: #EF4444;
+
+  --font-main: 'Outfit', 'Inter', sans-serif;
+
+  --shadow-neon: 0 0 20px rgba(155, 92, 255, 0.3);
+  --shadow-accent: 0 0 20px rgba(255, 78, 205, 0.3);
+}
+
+[data-theme='light'] {
+  /* Light Mode - Clean Obsidian */
+  --color-primary: #7C3AED;
+  /* Darker Purple for contrast */
+  --color-accent: #D946EF;
+  --color-bg-dark: #F3F4F6;
+  /* Light Gray Background */
+  --color-bg-secondary: #FFFFFF;
+  /* White Cards */
+
+  --glass-overlay: rgba(0, 0, 0, 0.05);
+  /* Darker glass for light mode */
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-blur: 12px;
+
+  --text-primary: #1F2937;
+  /* Dark Grey Text */
+  --text-muted: #6B7280;
+
+  --shadow-neon: 0 0 15px rgba(124, 58, 237, 0.2);
+  --shadow-accent: 0 0 15px rgba(217, 70, 239, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
